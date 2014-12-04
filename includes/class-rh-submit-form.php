@@ -277,7 +277,9 @@ class RH_Submit_Form {
                 $post_id = $new_id;
                 echo apply_filters( 'recipe_hero_submit_thankyou_message', __( 'Thank You for submitting your recipe!', 'recipe-hero-submit' ) );
             } else {
-                echo apply_filters( 'recipe_hero_submit_sorry_message', __( 'Sorry! There was a problem submitting your recipe.', 'recipe-hero-submit' ) );
+                if ( $_POST ) {
+                    echo apply_filters( 'recipe_hero_submit_sorry_message', __( 'Sorry! There was a problem submitting your recipe.', 'recipe-hero-submit' ) );
+                }
             }
 
             // Shortcodes need to return their data, not echo it.
@@ -498,10 +500,3 @@ class RH_Submit_Form {
 endif;
 
 $RH_Submit_Form = new RH_Submit_Form();
-
-function print_array($aArray) {
-// Print a nicely formatted array representation:
-  echo '<pre>';
-  print_r($aArray);
-  echo '</pre>';
-}
