@@ -32,6 +32,9 @@ if ( ! defined( 'WPINC' ) ) {
  **/
 if ( in_array( 'recipe-hero/recipe-hero.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 
+	// Load plugin text domain
+	add_action( 'init', 'rhs_load_textdomain' );
+
 	// Load up...
 	add_action( 'plugins_loaded', 'rhs_includes' ); // Includes
 	add_filter( 'recipe_hero_get_settings_pages', 'rhs_settings_page' );
@@ -73,6 +76,19 @@ if ( ! function_exists( 'rhs_updater' ) ) {
 	}
 }
 
+/**
+ * Load the plugin text domain for translation.
+ *
+ * @return void
+ */
+if ( ! function_exists( 'rhs_load_textdomain' ) ) {
+	function rhs_load_textdomain() {
+		$locale = apply_filters( 'plugin_locale', get_locale(), 'recipe-hero-submit' );
+
+		load_textdomain( 'recipe-hero-submit', trailingslashit( WP_LANG_DIR ) . 'recipe-hero-submit/recipe-hero-submit-' . $locale . '.mo' );
+		load_plugin_textdomain( 'recipe-hero-submit', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+	}
+}
 
 /**
  * Recipe Hero Deactivated Notice
