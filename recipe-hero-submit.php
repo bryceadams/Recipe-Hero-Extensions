@@ -3,9 +3,9 @@
  * Plugin Name: Recipe Hero Submit
  * Plugin URI: http://recipehero.in/
  * Description: Add a front-end submission form for recipes to your site, using the [recipe_hero_submit] shortcode
- * Author: Bryce Adams
- * Author URI: http://bryce.se/
- * Version: 1.0.0
+ * Author: Recipe Hero / Bryce Adams
+ * Author URI: http://recipehero.in/
+ * Version: 1.0.1
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -70,7 +70,7 @@ if ( ! function_exists( 'rhs_settings_page' ) ) {
  **/
 if ( ! function_exists( 'rhs_updater' ) ) {
 	function rhs_updater() {
-		if ( ! class_exists( 'RH_Updater' ) ) {
+		if ( ! class_exists( 'RH_Submit_Updater' ) ) {
 			include( plugin_dir_path( __FILE__ ) . '/updater/class-rh-updater.php' );
 		}
 	}

@@ -6,12 +6,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * RH_Updater
+ * RH_Submit_Updater
  *
  * @version  2.0
  * @author  Mike Jolley
  */
-class RH_Updater {
+class RH_Submit_Updater {
 	private $plugin_name = '';
 	private $plugin_file = '';
 	private $plugin_slug = '';
@@ -33,7 +33,7 @@ class RH_Updater {
 
 		$this->plugin_file = $file;
 		$this->plugin_slug = str_replace( '.php', '', basename( $this->plugin_file ) );
-		$this->plugin_name = basename( dirname( $this->plugin_file ) ) . '/' . $this->plugin_slug . '.php';
+		$this->plugin_name = basename( dirname( dirname( dirname( $this->plugin_file ) ) ) ) . '/' . $this->plugin_slug . '.php';
 
 		register_activation_hook( $this->plugin_name, array( $this, 'activation' ), 10 );
 		register_deactivation_hook( $this->plugin_name, array( $this, 'deactivation' ), 10 );
@@ -92,7 +92,7 @@ class RH_Updater {
 
 				include_once( 'class-rh-updater-key-api.php' );
 
-				$activate_results = json_decode( RH_Updater_Key_API::activate( array(
+				$activate_results = json_decode( RH_Submit_Updater_Key_API::activate( array(
 					'email'          => $email,
 					'licence_key'    => $licence_key,
 					'api_product_id' => $this->plugin_slug
@@ -213,7 +213,7 @@ class RH_Updater {
 	public function deactivate_licence() {
 		include_once( 'class-rh-updater-key-api.php' );
 
-		$reset = RH_Updater_Key_API::deactivate( array(
+		$reset = RH_Submit_Updater_Key_API::deactivate( array(
 				'api_product_id' => $this->plugin_slug,
 				'licence_key'    => $this->api_key,
 		) );
@@ -425,4 +425,4 @@ class RH_Updater {
 	}
 }
 
-new RH_Updater( plugin_dir_path( __FILE__ ) . '../recipe-hero-submit.php' );
+new RH_Submit_Updater( plugin_dir_path( __FILE__ ) . '../recipe-hero-submit.php' );

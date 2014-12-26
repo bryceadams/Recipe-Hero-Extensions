@@ -5,9 +5,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * RH_Updater_Key_API
+ * RH_Submit_Updater_Key_API
  */
-class RH_Updater_Key_API {
+class RH_Submit_Updater_Key_API {
 	private static $endpoint = 'http://recipehero.in/?wc-api=wp_plugin_licencing_activation_api';
 
 	/**
