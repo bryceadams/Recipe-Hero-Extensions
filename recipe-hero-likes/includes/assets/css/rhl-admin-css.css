@@ -1,0 +1,10 @@
+.post-type-recipe #posts-filter .wp-list-table tr th#likes {
+  width: 50px; }
+.post-type-recipe #posts-filter .wp-list-table tr td.likes .heart-icon {
+  font-size: 85%;
+  margin-left: 3px; }
+.post-type-recipe #posts-filter .wp-list-table tr td.likes .recipe-hero-likes-count {
+  float: left;
+  margin-left: 5px; }
+.post-type-recipe #posts-filter .wp-list-table tr td.likes .recipe-hero-likes-postfix {
+  display: none; }

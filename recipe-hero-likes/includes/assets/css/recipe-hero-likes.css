@@ -1,0 +1,23 @@
+.recipe-hero-likes {
+	border: 0 !important;
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	min-height: 14px;
+	text-decoration: none;
+}
+.recipe-hero-likes:hover,
+.recipe-hero-likes.active {
+	border: 0 !important;
+	text-decoration: none;
+}
+
+.recipe-hero-likes .heart-icon {
+	color: #e5e5e5;
+	padding-right: 3px;
+}
+
+.recipe-hero-likes:hover .heart-icon,
+.recipe-hero-likes.active .heart-icon {
+	color: #d1212d;
+}

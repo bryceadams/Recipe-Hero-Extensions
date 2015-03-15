@@ -1,0 +1,123 @@
+@media print {
+	@page {
+		margin: 0.5cm;
+	}
+	body {
+		background: none !important;
+		color: #000;
+		font: 12pt Georgia, "Times New Roman", Times, serif;
+		line-height: 1.3;
+	}
+
+	// Header
+	header {
+		display: none !important;
+	}
+
+	// Menus
+	nav,
+	.nav,
+	#nav {
+		display: none !important;
+	}
+
+	// Content
+	#content {
+		width: auto;
+		margin-left: 0;
+		float: none;
+	}
+
+	// Sidebars
+	#sidebar,
+	.sidebar,
+	#secondary,
+	.widget-area {
+		display: none;
+	}
+
+	// Footer
+	footer,
+	#footer,
+	.footer-widgets {
+		display: none !important;
+	}
+
+	// Images
+	img {
+		max-width: 500px;
+	}
+
+	// Recipe
+	article.recipe {
+		width: 100%;
+		input {
+			display: none;
+		}
+	}
+
+	// Extension Stuff
+	.recipe-hero-likes {
+		display: none;
+	}
+	.rh-bigoven-save {
+		display: none;
+	}
+
+	// Share Buttons
+	.sharedaddy {
+		display: none;
+	}
+
+	// Recipe Meta
+	.recipe-single-meta {
+		display: none;
+	}
+
+	h1 {
+		font-size: 24pt;
+	}
+
+	h2 {
+		font-size: 14pt;
+		margin-top: 25px;
+	}
+
+	aside h2 {
+		font-size: 18pt;
+	}
+
+	blockquote, ul {
+		margin: 0;
+	}
+
+	// Ingredients
+	.recipe-hero article.recipe .recipe-single-ingredients ul.ingredients-list li.ingredients-item .amount {
+		min-width: 0 !important;
+	}
+
+	// Instructions
+	.recipe-single-instructions .steps-list {
+		margin-left: 20px;
+	}
+
+	.print {
+		display: block !important;
+	}
+
+	.print-message {
+	    margin-bottom: 25px;
+	    font-size: 1.3em;
+	    border-bottom: 1px solid #ddd;
+	    padding: 0 0 20px;
+	}
+
+	/**
+	 * Theme Specific Stuff
+	 */
+
+	// Hueman theme
+	.main-inner.group {
+		padding: 0 !important;
+	}
+}

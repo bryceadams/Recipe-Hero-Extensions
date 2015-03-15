@@ -1,0 +1,10 @@
+1.1.1:
+* Fix Updater
+
+1.1.0:
+* Improve print styles
+* Settings for better print control
+* Shortcode [recipe_hero_print]
+
+1.0.0:
+* Initial Release

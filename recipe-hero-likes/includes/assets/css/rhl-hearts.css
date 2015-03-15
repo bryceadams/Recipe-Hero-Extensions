@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'rhl-hearts';
+  src: url('../fonts/rhl-hearts.eot?66438087');
+  src: url('../fonts/rhl-hearts.eot?66438087#iefix') format('embedded-opentype'),
+       url('../fonts/rhl-hearts.woff?66438087') format('woff'),
+       url('../fonts/rhl-hearts.ttf?66438087') format('truetype'),
+       url('../fonts/rhl-hearts.svg?66438087#rhl-hearts') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'rhl-hearts';
+    src: url('../font/rhl-hearts.svg?66438087#rhl-hearts') format('svg');
+  }
+}
+*/
+ 
+ [class^="rhl-icon-"]:before, [class*=" rhl-icon-"]:before {
+  font-family: "rhl-hearts";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.rhl-icon-heart:before { content: '\e800'; } /* '' */
+.rhl-icon-heart-empty:before { content: '\e801'; } /* '' */
+.rhl-icon-heart-1:before { content: '\e802'; } /* '' */
+.rhl-icon-heart-empty-1:before { content: '\e803'; } /* '' */
+.rhl-icon-heart-2:before { content: '\e804'; } /* '' */
+.rhl-icon-heart-filled:before { content: '\e805'; } /* '' */
+.rhl-icon-heart-3:before { content: '\e806'; } /* '' */
+.rhl-icon-heart-empty-2:before { content: '\e807'; } /* '' */
+.rhl-icon-heart-4:before { content: '\e808'; } /* '' */
+.rhl-icon-heart-5:before { content: '\e809'; } /* '' */
+.rhl-icon-heart-broken:before { content: '\e80a'; } /* '' */
+.rhl-icon-heart-6:before { content: '\e80b'; } /* '' */
+.rhl-icon-heart-circled:before { content: '\e80c'; } /* '' */
+.rhl-icon-heart-empty-3:before { content: '\e80d'; } /* '' */
+.rhl-icon-heart-7:before { content: '\e80e'; } /* '' */
+.rhl-icon-heart-8:before { content: '\e80f'; } /* '' */
+.rhl-icon-heart-empty-4:before { content: '\e810'; } /* '' */

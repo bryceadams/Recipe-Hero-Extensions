@@ -1,0 +1,58 @@
+.print {
+  display: none;
+}
+
+a.rh-print-icon {
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+@font-face {
+  font-family: 'rhprint';
+  src: url('../fonts/rhprint.eot?70162646');
+  src: url('../fonts/rhprint.eot?70162646#iefix') format('embedded-opentype'),
+       url('../fonts/rhprint.woff?70162646') format('woff'),
+       url('../fonts/rhprint.ttf?70162646') format('truetype'),
+       url('../fonts/rhprint.svg?70162646#rhprint') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+ [class^="rhprint"]:before, [class*=" rhprint"]:before {
+  font-family: "rhprint";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.rhprintprint-0:before { content: '\e802'; }
+.rhprintprint-1:before { content: '\e803'; }
+.rhprintprint-2:before { content: '\e804'; }
+.rhprintprint-3:before { content: '\e805'; }
+.rhprintprint-4:before { content: '\e806'; }
+.rhprintprint-5:before { content: '\e807'; }
+.rhprintprint-6:before { content: '\e808'; }

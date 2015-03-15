@@ -1,0 +1,13 @@
+#recipe_hero_video.postbox .inside {
+	padding-top: 5px;
+	padding-bottom: 20px;
+}
+#recipe_hero_video.postbox .inside input.video-url {
+	margin-top: 5px;
+	width: 100%;
+}
+#recipe_hero_video.postbox .inside iframe {
+	width: 100%;
+	height: auto;
+	margin-top: 15px;
+}

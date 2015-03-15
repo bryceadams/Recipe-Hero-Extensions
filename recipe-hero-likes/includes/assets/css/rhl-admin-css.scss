@@ -1,0 +1,28 @@
+.post-type-recipe {
+	#posts-filter {
+		.wp-list-table {
+			tr {
+				th {
+					&#likes {
+						width: 50px;
+					}
+				}
+                td {
+                    &.likes {
+                        .heart-icon {
+                            font-size: 85%;
+                            margin-left: 3px;
+                        }
+                        .recipe-hero-likes-count {
+                            float: left;
+                            margin-left: 5px;
+                        }
+                        .recipe-hero-likes-postfix {
+                            display: none;
+                        }
+                    }
+                }
+			}
+		}
+	}
+}
